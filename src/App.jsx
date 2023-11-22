@@ -1,7 +1,20 @@
+import Chatmain from "./components/chatmain/Chatmain";
+import CurrentUser from "./components/currentUser/CurrentUser";
+
 export default function App() {
   return (
-    <h1 className="text-3xl text-yellow-500 font-bold">
-      Hello Ankit!
-    </h1>
-  )
+    <>
+      <div
+        className="
+          font-montserrat 
+          h-screen
+          bg-white
+          sm:{
+            flex align-middle justify-center
+          }"
+      >
+        <Chatmain />
+      </div>
+    </>
+  );
 }

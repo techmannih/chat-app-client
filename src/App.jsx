@@ -8,10 +8,10 @@ export default function App() {
         className="
           font-montserrat 
           h-screen
-          bg-white
-          sm:{
-            flex align-middle justify-center
-          }"
+        bg-white
+          flex
+          justify-center
+          align-bottom "
       >
         <Chatmain />
       </div>

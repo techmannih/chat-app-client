@@ -19,9 +19,10 @@ export default function ChatSearch() {
           </svg>
         </div>
         <input
-          className="bg-transparent outline-none placeholder:text-blue"
+          className="bg-transparent outline-none placeholder:text-blue w-full"
           type="text"
           placeholder="Search chats ..."
+          spellCheck={false}
         />
       </div>
     </div>

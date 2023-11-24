@@ -7,11 +7,7 @@ export default function App() {
       <div
         className="
           font-montserrat 
-          h-screen
-        bg-white
-          flex
-          justify-center
-          align-bottom "
+          h-screen"
       >
         <Chatmain />
       </div>

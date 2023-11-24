@@ -1,12 +1,7 @@
 export default function ChatSearch() {
   return (
     <div className="container flex justify-center">
-      <div className="searchbox flex justify-center border-4 border-white w-80 py-2 rounded-xl">
-        <input
-          className="bg-transparent outline-none placeholder:text-blue"
-          type="text"
-          placeholder="Search chats ..."
-        />
+      <div className="container searchbox flex border-4 border-white py-2 rounded-xl space-x-3 mx-10 bg-white p-4">
         <div className="searchicon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +9,7 @@ export default function ChatSearch() {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-6 h-6 opacity-20"
           >
             <path
               strokeLinecap="round"
@@ -23,6 +18,11 @@ export default function ChatSearch() {
             />
           </svg>
         </div>
+        <input
+          className="bg-transparent outline-none placeholder:text-blue"
+          type="text"
+          placeholder="Search chats ..."
+        />
       </div>
     </div>
   );

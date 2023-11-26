@@ -1,6 +1,6 @@
 export default function ChatUser() {
   return (
-    <div className="container flex p-4">
+    <div className="container flex p-4 hover:bg-slate-200 cursor-pointer mb-2">
       {/* profile pic */}
       <div className="w-20 h-20">
         <img

@@ -7,7 +7,8 @@ export default function App() {
       <div
         className="
           font-montserrat 
-          h-screen"
+          h-screen
+          overflow-hidden"
       >
         <Chatmain />
       </div>

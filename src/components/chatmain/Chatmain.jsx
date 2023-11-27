@@ -1,3 +1,4 @@
+import ChatArea from "../chatArea/chatArea";
 import Chatleftbar from "../chatLeftSection/Chatleftbar";
 
 export default function Chatmain() {
@@ -5,9 +6,11 @@ export default function Chatmain() {
     <div
       className="
       w-screen
+      flex
       h-full"
     >
       <Chatleftbar />
+      <ChatArea />
     </div>
   );
 }

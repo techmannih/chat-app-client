@@ -7,8 +7,7 @@ export default function Chatmain() {
       className="
       w-screen
       flex
-      h-full"
-    >
+      h-full">
       <Chatleftbar />
       <ChatArea />
     </div>

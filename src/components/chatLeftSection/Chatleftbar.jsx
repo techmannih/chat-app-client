@@ -11,26 +11,29 @@ export default function Chatleftbar() {
       <div>
         <ChatSearch />
       </div>
-      <div className="leftUsers mt-5 overflow-scroll h-full">
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
-        <ChatUser/>
+      <div className="mt-4">
+        <hr className="border-slate-200" />
+      </div>
+      <div className="leftUsers overflow-scroll h-full">
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
+        <ChatUser />
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ export default function ChatArea() {
                 <hr className="border-slate-200" />
             </div>
             {/* chat area */}
-            <div className="flex flex-col flex-col-reverse overflow-y-scroll p-2" style={{ height: "90.5%", }}>
+            <div className="flex flex-col-reverse overflow-y-scroll p-2" style={{ height: "90.5%", }}>
                 <div className="">
                     <div className="flex items-center justify-start text-white m-2">
                         <div className="w-fit max-w-xl bg-gray-600 p-2 rounded-3xl">

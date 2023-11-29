@@ -4,7 +4,7 @@ import CurrentUser from "../currentUser/CurrentUser";
 
 export default function Chatleftbar() {
   return (
-    <div className="w-1/3 h-full bg-slate-100 overflow-hidden">
+    <div className="w-2/5 h-full bg-slate-100 overflow-hidden">
       <div className="z-10">
         <CurrentUser />
       </div>

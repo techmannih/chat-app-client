@@ -2,7 +2,7 @@ import ChatUser from "../chatUser/ChatUser";
 
 export default function ChatArea() {
     return (
-        <div className="w-2/3 bg-slate-100 border-l-2 border-slate-200 h-screen">
+        <div className="w-3/5 bg-slate-100 border-l-2 border-slate-200 h-screen">
             {/* top - user details */}
             <div className="bg-white h-fit">
                 <div className="flex items-center py-2 px-4">

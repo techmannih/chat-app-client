@@ -1,8 +1,33 @@
-# React + Vite
+# Chat App in ReactJs using Socket.IO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to use/contribute
 
-Currently, two official plugins are available:
+**1. fork the repo**
+    
+    git clone https://github.com/ydv-ankit/chat-app-client.git
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+**2. change directory to project**
+
+    cd chat-app-client
+
+**3. install dependencies**
+
+    npm install
+
+**4. run vite server**
+
+    npm run dev
+
+## (for contributors)
+- do changes if you want to and save, vite will autoreload the webapp and see your changes.
+
+**create new branch**
+
+    git checkout -b branch_name
+
+**commit changes and push it**
+
+    git push origin branch_name
+
+**raise a pull request and wait to be merged**

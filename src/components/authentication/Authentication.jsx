@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { googleSignIn } from '../../fireauth/firebase_auth';
-import { signInWithPopup, signInWithRedirect } from 'firebase/auth';
+import { signInWithPopup } from 'firebase/auth';
 import { auth } from '../../fireauth/firebase_auth';
 import { createUser, setCookies } from '../../utils/APIs';
 import { useNavigate } from 'react-router-dom';

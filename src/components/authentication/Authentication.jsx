@@ -12,25 +12,17 @@ const Authenticate = () => {
     const handleSignup = async () => {
         await signInWithPopup(auth, googleSignIn)
             .then((resp) => {
-                console.log(resp);
                 const reqData = {
                     fullname: resp.user.displayName,
                     userId: resp.user.uid,
                     profilePicUrl: resp.user.photoURL,
                     email: resp.user.email
                 }
-                const res = createUser(reqData);
-                if (res === true) {
-                    console.log('User created successfully');
-                    setCookies('userId', resp.user.uid, 1);
-                    setError('');
-                    navigate('/', { replace: true });
-                } else {
-                    console.log('User not created');
-                    setError('Error occured !!');
-                }
+                setCookies('userId', resp.user.uid, 1);
+                setError('');
+                navigate('/', { replace: true });
             }).catch((error) => {
-                console.log(error);
+                console.error(error);
                 setError('Error occured !!');
             });
     };

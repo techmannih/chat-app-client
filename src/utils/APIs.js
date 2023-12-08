@@ -2,20 +2,20 @@ import axios from "axios";
 
 // function to hit createUser API endpoint
 export const createUser = async (data) => {
-  const user = await axios.post(`${import.meta.env.VITE_SERVER_URI}/users/new`, data);
-  if (user) {
-    return true;
-  } else {
-    return false;
+  try{
+    const user = await axios.post(`${import.meta.env.VITE_SERVER_URI}/users/new`, data);
+    return;
+  }catch(err){
+    console.log(err);
   }
 }
 
 export const setCookies = (key, value) => {
-  document.cookie = `${key}=${value}`;
+  document.cookie = `${key}=${value}; SameSite=None; Secure;`;
 }
 
 export const removeCookies = (key) => {
-  document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+  document.cookie = `${key}=; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
 }
 
 export const getCookies = (key) => {

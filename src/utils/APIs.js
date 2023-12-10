@@ -26,5 +26,5 @@ export const getCookies = (key) => {
       return cookie[1];
     }
   }
-  return null;
+  return 'null';
 }

@@ -2,7 +2,7 @@ import ChatUser from "../chatUser/ChatUser";
 
 export default function ChatArea() {
     return (
-        <div className="w-3/5 bg-slate-100 border-l-2 border-slate-200 h-screen">
+        <div className="w-2/3 bg-slate-100 border-l-2 border-slate-200 h-screen">
             {/* top - user details */}
             <div className="bg-white h-fit">
                 <div className="flex items-center py-2 px-4">
@@ -40,7 +40,7 @@ export default function ChatArea() {
                     
                 </div>
 
-                {/* send message */}
+                {/* send message area*/}
                 <div className="fixed bottom-0 bg-white w-2/3 flex rounded-lg -ml-2 z-10">
                     <input className="outline-none bg-transparent w-full text-lg px-4 rounded-md placeholder:text-sm" type="text" placeholder="Type message..." />
                     <button className="bg-blue-800 text-white w-/3 rounded-full font-bold p-2 px-4 ">Send</button>

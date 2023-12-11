@@ -4,6 +4,7 @@ import axios from "axios";
 export const createUser = async (data) => {
   try{
     const user = await axios.post(`${import.meta.env.VITE_SERVER_URI}/users/new`, data);
+    console.log(user);
     return;
   }catch(err){
     console.log(err);

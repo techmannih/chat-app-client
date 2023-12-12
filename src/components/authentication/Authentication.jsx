@@ -5,9 +5,8 @@ import { auth } from '../../fireauth/firebase_auth';
 import { createUser, setCookies } from '../../utils/APIs';
 import { useNavigate } from 'react-router-dom';
 
-const Authenticate = () => {
+const Authenticate = ({isLoggedIn, setIsLoggedIn}) => {
     const [error, setError] = useState('');
-    const navigate = useNavigate();
 
     const handleSignup = async () => {
         await signInWithPopup(auth, googleSignIn)
@@ -18,10 +17,13 @@ const Authenticate = () => {
                     profilePicUrl: resp.user.photoURL,
                     email: resp.user.email
                 }
+                createUser(reqData);
                 setCookies('userId', resp.user.uid, 1);
+                setIsLoggedIn(true);
                 setError('');
-                navigate('/', { replace: true });
+                window.location.href = "/";
             }).catch((error) => {
+                setIsLoggedIn(false);
                 console.error(error);
                 setError('Error occured !!');
             });

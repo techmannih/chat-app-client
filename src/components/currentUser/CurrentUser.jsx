@@ -1,15 +1,15 @@
-export default function CurrentUser() {
+export default function CurrentUser({userData}) {
   return (
     <div className="p-2">
       <div className="m-2 flex content-center justify-center p-5">
         <img
           className="rounded-full w-20 h-20"
-          src="/src/assets/img/profile.jpg"
+          src={userData.profilePicUrl}
           alt=""
         />
         <div className="container ml-10 flex flex-col justify-center content-center">
-          <h1 className="text-2xl font-bold text-gray-800">Fullname</h1>
-          <p className="text-gray-600">@emailId</p>
+          <h1 className="text-2xl font-bold text-gray-800">{userData.fullname}</h1>
+          <p className="text-gray-600">@{userData.username}</p>
         </div>
         <div>
           <div className="w-10 h-10 cursor-pointer flex flex-wrap content-center justify-center rounded-full hover:border-white hover:border-2 hover:bg-white">

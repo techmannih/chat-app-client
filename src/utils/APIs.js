@@ -29,3 +29,8 @@ export const getCookies = (key) => {
   }
   return 'null';
 }
+
+export const getTime = (time) => {
+  const date = new Date(time);
+  return date.toLocaleString();
+}

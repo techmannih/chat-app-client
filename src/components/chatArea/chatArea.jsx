@@ -14,15 +14,15 @@ export default function ChatArea(props) {
     }
 
     useEffect(()=>{
-        // getUserProfileData();
+        getUserProfileData();
     }, [])
 
     if(chatData === null) {
         return (
-            <div className="">Loading...</div>
+            <div className="flex justify-center p-1 mt-14 text-xl">Loading...</div>
         )
     }
-
+    
     return (
         <div className="w-2/3 bg-slate-100 border-l-2 border-slate-200 h-screen">
             {/* top - user details */}

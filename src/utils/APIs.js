@@ -23,7 +23,7 @@ export const getCookies = (key) => {
   const cookies = document.cookie.split(';');
   for (let i = 0; i < cookies.length; i++) {
     const cookie = cookies[i].split('=');
-    if (cookie[0] === key) {
+    if (cookie[0].trim() === key) {
       return cookie[1];
     }
   }

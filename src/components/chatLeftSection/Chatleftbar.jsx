@@ -4,14 +4,11 @@ import ChatUser from "../chatUser/ChatUser";
 import CurrentUser from "../currentUser/CurrentUser";
 import axios from "axios";
 import { getCookies } from "../../utils/APIs";
+import { Link } from "react-router-dom";
 
 export default function Chatleftbar() {
   const [userData, setUserData] = useState(null);
   const [chatsList, setChatsList] = useState(null);
-
-  const handleGetChatArea = (chatId) => {
-    window.location.href = `${chatId}`;
-  };
 
   const getUserProfileData = async () => {
     // fetch user data from backend using axios
@@ -27,6 +24,7 @@ export default function Chatleftbar() {
       `${import.meta.env.VITE_SERVER_URI}/chats`
     );
     setChatsList(response.data);
+    console.log(response.data);
   };
 
   useEffect(() => {
@@ -61,13 +59,13 @@ export default function Chatleftbar() {
         ) : (
           chatsList.chats.map((chat) => {
             return (
-              <div
+              <Link
                 className="flex justify-center text-xl"
                 key={chat._id}
-                onClick={() => handleGetChatArea(chat._id)}
+                to={`/chat/${chat.chatId}`}
               >
                 <ChatUser chat={chat} />
-              </div>
+              </Link>
             );
           })
         )}

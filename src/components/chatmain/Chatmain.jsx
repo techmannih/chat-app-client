@@ -21,21 +21,20 @@ export default function Chatmain() {
     if (getCookies("userId") === "null") {
       window.location.href = "/";
     }
+    getUserProfileData();
   }, []);
 
-  if (userData === null || chatsList === null) {
+  if (userData === null) {
     return <div className="">Loading...</div>;
   }
 
   return (
     <div className="w-screen flex h-full">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<ChatBlank />} />
-          <Route path="/profile" element={<Profile userData={userData} />} />
-          <Route path="/:id" element={<ChatArea />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ChatBlank />} />
+        <Route path="/profile/:id" element={<Profile userData={userData} />} />
+        <Route path="/chat/:id" element={<ChatArea />} />
+      </Routes>
     </div>
   );
 }

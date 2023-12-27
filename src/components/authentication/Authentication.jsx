@@ -3,7 +3,6 @@ import { googleSignIn } from '../../fireauth/firebase_auth';
 import { signInWithPopup } from 'firebase/auth';
 import { auth } from '../../fireauth/firebase_auth';
 import { createUser, setCookies } from '../../utils/APIs';
-import { useNavigate } from 'react-router-dom';
 
 const Authenticate = ({isLoggedIn, setIsLoggedIn}) => {
     const [error, setError] = useState('');

@@ -16,11 +16,11 @@ export default function ChatUser({chat}) {
     if(chat === null) {
       return;
     }
-    if(chat.participants.senderId === getCookies("userId")) {
-      getUserData(chat.participants.receiverId);
+    if(chat.participants[0] === getCookies("userId")) {
+      getUserData(chat.participants[1]);
     }
     else{
-      getUserData(chat.participants.senderId);
+      getUserData(chat.participants[0]);
     }
   }, []);
 
